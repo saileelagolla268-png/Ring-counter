@@ -1,0 +1,7 @@
+Time = 0 | Reset = 1 | Q = 0001
+Time = 10 | Reset = 0 | Q = 0010
+Time = 20 | Reset = 0 | Q = 0100
+Time = 30 | Reset = 0 | Q = 1000
+Time = 40 | Reset = 0 | Q = 0001
+Time = 50 | Reset = 0 | Q = 0010
+Time = 60 | Reset = 0 | Q = 0100

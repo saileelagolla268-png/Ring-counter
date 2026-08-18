@@ -1,0 +1,22 @@
+//============================================================
+// Ring Counter
+// Description : 4-bit Ring Counter using Verilog
+//============================================================
+
+`timescale 1ns/1ps
+
+module ring_counter (
+    input  wire       clk,
+    input  wire       reset,
+    output reg  [3:0] q
+);
+
+    // Ring counter operation
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            q <= 4'b0001;
+        else
+            q <= {q[2:0], q[3]};
+    end
+
+endmodule
